@@ -1,0 +1,18 @@
+# Site settings
+title: Write/Speak/Code Accomplishments
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://writespeakcode.github.io/accomplishments" # the base hostname & protocol for your site
+
+# Build settings
+markdown: redcarpet
+
+collections:
+  write:
+    output: true
+    permalink: /write/:title/
+  speak:
+    output: true
+    permalink: /speak/:title/
+  code:
+    output: true
+    permalink: /code/:title/
