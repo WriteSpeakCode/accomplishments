@@ -179,16 +179,20 @@
 }
 
 .post-meta {
+    display: block;
     font-size: $small-font-size;
     color: $grey-color;
 }
 
 .post-link {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
-
+.post-author {
+    display: block;
+    font-style: italic;
+}
 
 /**
  * Posts

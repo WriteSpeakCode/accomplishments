@@ -2,35 +2,39 @@
 layout: default
 ---
 
-# Accomplishments
 Checkout what our members have been up to!
 
-## Write
+# Write
+<ul class="post-list">
 {% for post in site.write limit:3 %}
-* [{{ post.title}}]({{ post.link }})
-
-    {{ post.author }} from the {{ post.chapter }} chapter
-
-    {{ post.date | date: "%b %-d, %Y" }}
+  <li>
+    <a href="{{ post.link }}" class="post-link">{{ post.title}}</a>
+    <span class="post-author">{{ post.author }} from the {{ post.chapter }} chapter</span>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</a>
+  </li>
 {% endfor %}
+</ul>
 
-## Speak
+# Speak
+<ul class="post-list">
 {% for post in site.speak limit:3 %}
-* [{{ post.title}}]({{ post.link }})
-
-    @ {{ post.venue }}
-
-    {{ post.author }} from the {{ post.chapter }} chapter
-
-    {{ post.date | date: "%b %-d, %Y" }}
+  <li>
+    <a href="{{ post.link }}" class="post-link">{{ post.title}}</a>
+    <span class="post-author">{{ post.author }} from the {{ post.chapter }} chapter</span>
+    <span class="post-meta">@ {{ post.venue }} on {{ post.date | date: "%b %-d, %Y" }}</a>
+  </li>
 {% endfor %}
+</ul>
 
-## Code
+# Code
+<ul class="post-list">
 {% for post in site.code limit:3 %}
-* [{{ post.title}}]({{ post.link }})
-
-    {{ post.author }} from the {{ post.chapter }} chapter
-
-    {{ post.date | date: "%b %-d, %Y" }}
+  <li>
+    <a href="{{ post.link }}" class="post-link">{{ post.title}}</a>
+    <span class="post-author">{{ post.author }} from the {{ post.chapter }} chapter</span>
+    <span class="post-meta">to {{ post.project }} on {{ post.date | date: "%b %-d, %Y" }}</a>
+  </li>
 {% endfor %}
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</ul>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
