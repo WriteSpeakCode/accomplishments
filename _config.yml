@@ -7,12 +7,4 @@ url: "http://writespeakcode.github.io/accomplishments" # the base hostname & pro
 markdown: redcarpet
 
 collections:
-  write:
-    output: true
-    permalink: /write/:title/
-  speak:
-    output: true
-    permalink: /speak/:title/
-  code:
-    output: true
-    permalink: /code/:title/
+  - items
