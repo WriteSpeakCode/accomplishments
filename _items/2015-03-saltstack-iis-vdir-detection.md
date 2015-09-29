@@ -4,5 +4,7 @@ link: https://github.com/saltstack/salt-contrib/pull/112
 project: Salt Stack Contrib
 author: Carolyn Van Slyck
 date: "2015-03-02"
-tags: code Chicago
+tags:
+  - code
+  - Chicago
 ---
