@@ -2,7 +2,8 @@
 layout: default
 ---
 
-Checkout what our members have been up to!
+Checkout what our members have been up to! Don't forget to
+[Submit your accomplishments][contributing].
 
 <ul class="post-list">
 {% assign items = site.items | sort: 'date' %}
@@ -18,3 +19,5 @@ Checkout what our members have been up to!
 </ul>
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+[contributing]: https://github.com/WriteSpeakCode/accomplishments/blob/gh-pages/CONTRIBUTING.md
